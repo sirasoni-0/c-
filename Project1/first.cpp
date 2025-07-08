@@ -1,6 +1,5 @@
 int main()
 {
-	int i = 0;
 
 	//자료형 (크기단위 byte=(8bit))
 	//정수형: char(1), short(2), int(4), long(4), longlong(8)
@@ -12,10 +11,16 @@ int main()
 
 	int i = 0;
 
-
+	//1byte로 양수만 표현 256가지 0~255
 	unsigned char c = 0;
 	c = 0;
 	c = 255;
 
 	c = -1;
+	//1byte로 정수 표현 256가지 -128~0~127
+	char c1 = 0;
+
+	c1 = 255;
+
+	return 0;
 }
