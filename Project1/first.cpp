@@ -14,7 +14,7 @@ int main()
 	unsigned char c = 0;
 	c = 0;
 	c = 255;
-	
+
 	c = -1;
 	//1byte로 정수 표현 256가지 -128~0~127
 	char c1 = 0;
@@ -42,7 +42,7 @@ int main()
 
 	data = 0;
 	c = 10;
-	
+
 	data = c++;
 
 	//2025.7.10
@@ -56,7 +56,7 @@ int main()
 
 	bool mitin = 4;
 	char bam = mitin;
-	
+
 	bam = 0 && 100;
 	bam = 0 || 100;
 
@@ -65,7 +65,11 @@ int main()
 	// 비교연산자
 	// ==, !=, <, >, <=, >=
 	// 참 거짓으로(1 or 0)으로 결과를 낸다.
+	// =와 ==의 차이
+	// =는 메모리속 값이 변하지만, ==는 값은 그대로고 그 숫자와 비교만 한다.
 
+	// if구문
+	// if에 해당 사항 없으면 else if, 그래도 없으면 else 실행
 	bam = 300;
 	if (bam == 200)
 	{
@@ -97,7 +101,7 @@ int main()
 	{
 		bam = 26;
 	}
-	
+
 	if (mitin == 0)
 	{
 		bam = 2;
@@ -111,5 +115,60 @@ int main()
 	{
 		bam = 1;
 	}
-	return 0;
+
+	// switch 구문
+	// if구문과 비슷하지만 케이스로 나눠서 가독성이 좋음
+	// if구문과 달리 case를 빠져 나오기 위해서는 break; 사용해야함.
+	// if구문과 switch구문 둘다 시작은 아무것도 적지 않지만 구문 속으로 들어가면 if는 세미콜론을 사용하고
+	// case에 콜론을 붙이고 케이스 안에선 세미콜론을 사용한다.
+
+	int itst = 10;
+	switch (itst)
+	{
+	case 5:
+		itst = 6;
+		break;
+	case 10:
+		itst = 12;
+		break;
+	default:
+		break;
+
+
+	}
+
+	int asd = 10;
+	switch (asd)
+	{
+	case 10:
+	case 20:
+	case 30:
+
+		itst = 50;
+
+		break;
+	case 40:
+		break;
+	default:
+
+
+		break;
+	}
+	//논리 연산자에서 우선 순위는 !, and, or 순서이다.
+	if (itst == 30 || itst == 60 && itst == 50)
+	{
+		itst = 123;
+	}
+	else
+	{
+		itst = 321;
+	}
+
+
+	//삼항 연산자
+	int test = 20;
+	
+	test == 20 ? test = 10 : test = 30;
+
+ 	return 0;
 }
