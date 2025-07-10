@@ -42,10 +42,74 @@ int main()
 
 	data = 0;
 	c = 10;
-
+	
 	data = c++;
+
+	//2025.7.10
+	// 논리 연산자
+	//!(역), &&(and), ||(or)
+	// bool 자료형은 엄밀히 따지면 정수이지만, 출력은 0이나 1밖에 못한다.
+	// 0은 false를 의미하고 true는 0이외의 모든 값을 이야기한다.
+	// 논리 연산자로는 1과 0밖에 표현할 수 없다. 하지만 이것들을 조합하거나 병렬적으로 사용하면 복잡한 것도 만들 수 있다.
+	int istrue = 100;
+	bool daw = !istrue;
+
+	bool mitin = 4;
+	char bam = mitin;
 	
+	bam = 0 && 100;
+	bam = 0 || 100;
+
+	bam = 200;
+	mitin = 0 && bam;
+	// 비교연산자
+	// ==, !=, <, >, <=, >=
+	// 참 거짓으로(1 or 0)으로 결과를 낸다.
+
+	bam = 300;
+	if (bam == 200)
+	{
+		bam = 30;
+	}
+	else if (bam == 300)
+	{
+		bam = 20;
+	}
+
+	else if (bam == 44)
+	{
+		bam = 77;
+	}
+	else
+	{
+		bam = 9;
+	}
+
+	if (bam == true)
+	{
+		bam = false;
+	}
+	else if (bam == false)
+	{
+		bam = true;
+	}
+	else
+	{
+		bam = 26;
+	}
 	
-	
+	if (mitin == 0)
+	{
+		bam = 2;
+	}
+	else if (mitin != 0)
+	{
+		bam = 3;
+	}
+
+	if (bam > 1)
+	{
+		bam = 1;
+	}
 	return 0;
 }
