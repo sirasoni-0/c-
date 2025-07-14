@@ -1,3 +1,6 @@
+#define HUNGRY 1
+#define THIRSTY 2
+
 int main()
 {
 	//2025.7.8
@@ -53,10 +56,11 @@ int main()
 	// 논리 연산자로는 1과 0밖에 표현할 수 없다. 하지만 이것들을 조합하거나 병렬적으로 사용하면 복잡한 것도 만들 수 있다.
 	int istrue = 100;
 	bool daw = !istrue;
-
+	bool ox;
 	bool mitin = 4;
 	char bam = mitin;
 
+	ox = 0;
 	bam = 0 && 100;
 	bam = 0 || 100;
 
@@ -208,6 +212,25 @@ int main()
 	am = 3;
 	int music = 0;
 	music = am & gar;
+	int k = 1;
+	k += 3;
+	//2025.7.14
+	// #define 은 전처리기로 컴파일러가 최우선적으로 실행한다.
 
- 	return 0;
+	unsigned int status = 0;
+
+	status |= HUNGRY;
+	status |= THIRSTY;
+	// 상태 확인
+	
+	if (status & THIRSTY)
+	{
+
+	}
+
+	// 특정자리 비트 제거
+		status &= ~THIRSTY;
+
+	return 0;
 }
+	
