@@ -29,14 +29,6 @@ int division (int left, int right)
 
 
 
-
-
-
-
-
-
-
-
 int main()
 {
 	//retry는 종류를 위한 변수
