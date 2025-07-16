@@ -10,7 +10,8 @@
 //{
 //	return left + right;
 //}
-//
+//위 함수에서 내가 result = addition(input_num1, input_num2); 라는 코드를 쓰면 input_num1, input_num2)의 값이
+// 레프트와 라이트에 들어갔다가 나온다. left right로 설정한 건 가독성을 위한 것이다.
 //
 //
 //// 전역 변수
@@ -334,6 +335,7 @@ int main()
 	//2025.7.16.
 	//오늘은 printf와 scanf에 대해 배웠다.
 	//%d는 서식 지정자(format specifier)라고 한다. %d는 정수를, %f는 실수를, %s는 문자열을 의미한다.
+	//
 	
 
 	printf("asdaf %d\n", 10);
@@ -344,6 +346,9 @@ int main()
 	}
 	//scanf_s는 print와 반대로 문자를 입력받는 함수이다.
 	//scanf하나만쓰고 여러개를 입력받고 싶다면 scanf("%d %d",&a,&b);
+	//scanf에서 문자를 입력받으려면 char 변수를 만들고 %c로 입력받아야한다. 
+	//만약 문자열을 받고 싶다면 %s로 입력을 받되, 문자열를 반드시 배열에 저장해야한다.
+	//또한 scanf_s(" %c", &retry, 1);와 같이 문자의 크기도 표현해야한다. 영어는 알파벳당 1바이트다.*아스키코드*
 
 	int mira = 0;
 	printf("input your number\n");
