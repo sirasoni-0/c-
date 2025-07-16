@@ -270,7 +270,7 @@
 //	data = 10;
 //	data += add(10, 20);
 //
-//	int sex;
+//	int sss;
 //
 //	return 0;
 //}
@@ -328,6 +328,28 @@ int main()
 		++i;
 
 	}
+
+
+
+	//2025.7.16.
+	//오늘은 printf와 scanf에 대해 배웠다.
+	//%d는 서식 지정자(format specifier)라고 한다. %d는 정수를, %f는 실수를, %s는 문자열을 의미한다.
+	
+
+	printf("asdaf %d\n", 10);
+
+	for (int i = 0; i < 10; i++)
+	{
+		printf("output of i : %d\n", i);
+	}
+	//scanf_s는 print와 반대로 문자를 입력받는 함수이다.
+	//scanf하나만쓰고 여러개를 입력받고 싶다면 scanf("%d %d",&a,&b);
+
+	int mira = 0;
+	printf("input your number\n");
+	scanf_s("%d", &mira);
+	printf("your number is %d", mira);
+
 
 	return 0;
 }
