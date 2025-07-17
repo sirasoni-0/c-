@@ -355,6 +355,18 @@ int main()
 	scanf_s("%d", &mira);
 	printf("your number is %d", mira);
 
+// 7.17
+/*int a = 0;
+	int result = 1;
+	printf("팩토리얼을 구할 숫자를 입력해주세요:\n");
+	scanf_s("%d", &a);
+	for(; a >= 2; --a)
+	{
+		result *= a;
+	}*/
+//printf("%d", result);
 
+
+//새로운 사실, for문에서 초기식을 없애면 조건식을 for문 밖에 있는 변수로 확인한다.
 	return 0;
 }
