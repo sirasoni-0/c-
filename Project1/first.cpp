@@ -353,7 +353,7 @@ int main()
 	int mira = 0;
 	printf("input your number\n");
 	scanf_s("%d", &mira);
-	printf("your number is %d", mira);
+	printf("your number iz %d", mira);
 
 // 7.17
 /*int a = 0;
