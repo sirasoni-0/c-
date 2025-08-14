@@ -299,6 +299,10 @@ int add(int left, int right)
 	return (left + right);
 }
 
+
+
+
+
 int main()
 {
 	int data = add(2, 3);
@@ -377,11 +381,11 @@ int main()
 
 // 재귀함수
 
-	int fibonacci(int n)
-	 {
-		if (n <= 1) return n;  // 종료 조건
-		return fibonacci(n - 1) + fibonacci(n - 2);  // 재귀 호출
-	 }
+	//int fibonacci(int n)
+	// {
+	//	if (n <= 1) return n;  // 종료 조건
+	//	return fibonacci(n - 1) + fibonacci(n - 2);  // 재귀 호출
+	// }
 // 이건 피보나치 수열을 재귀함수 형식으로 만든것이다..
 // for문으로 만들 수 있지만 재귀함수가 코드도 적고 직관적으로 보기 쉽다.
 // 주의사항: 재귀함수를 사용하면 함수가 여러번 호출되므로 실행 속도도 느려지고 메모리도 차지한다.
@@ -455,6 +459,6 @@ int main()
    따라서 헤더파일에는 함수 선언만 넣고, 구현은 별도의 소스파일에 작성하는 것이 좋음.'
    왜냐하면 #include는 단순히 텍스트를 복사하는 것이기 때문에, 같은 함수가 파일마다 존재하는 것과 다를게 없는 상황이 생기기 때문임.
 */
-		
+	
 	return 0;
 }
